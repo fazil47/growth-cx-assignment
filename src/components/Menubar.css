@@ -43,6 +43,14 @@
   @apply h-5 w-5;
 }
 
+#menuLinks > a:nth-child(2):after {
+  content: "Your pains";
+  font-family: "Gloria Hallelujah", cursive;
+  text-decoration: line-through;
+  position: absolute;
+  transform: translate(-75%, -75%);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .expandedMenu #menuLinks {
     animation-name: revealLinks;
