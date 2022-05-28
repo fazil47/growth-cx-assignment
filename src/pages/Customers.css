@@ -1,0 +1,19 @@
+.mainSectionBackground {
+  background-image: url("../imgs/mainSectionImage.png");
+  @apply h-[522px] w-full flex justify-center bg-no-repeat bg-contain bg-bottom;
+}
+
+.mainSection {
+  @apply max-w-[1140px] h-[522px] xl:px-[40px] flex flex-col justify-between;
+}
+
+.aboutUs {
+  @apply max-w-[981px] h-[240px] mt-24 flex flex-col justify-evenly;
+}
+
+.aboutUs h1 {
+  @apply text-3xl xl:text-5xl;
+}
+
+.byLine {
+}
