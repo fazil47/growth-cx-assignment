@@ -1,7 +1,35 @@
 #layout {
-  @apply w-full h-full overflow-y-hidden px-2;
+  @apply w-full h-full overflow-y-hidden;
 }
 
 #layoutContent {
   @apply pt-[80px];
+}
+
+#footerText {
+  @apply bg-black pb-8 text-white h-full w-full;
+}
+
+#footerText > p {
+  @apply font-bold max-w-[80%] mx-auto mb-[46px] pt-5 sm:pt-0 text-[20px] leading-[24px] sm:text-[55px] sm:leading-[66px];
+}
+
+#footerLinksContainer {
+  @apply my-8 mx-auto grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1;
+}
+
+#footerLinksContainer > div {
+  @apply my-5 mx-auto flex flex-col justify-start h-[124px];
+}
+
+#footerLinksContainer > div > * {
+  @apply mx-auto xl:mx-0 xl:text-left;
+}
+
+#footerLinksContainer a {
+  @apply text-sm text-gray-300 my-1 hover:text-gray-400;
+}
+
+#footerCopyright {
+  @apply text-[10px] leading-[17px];
 }
