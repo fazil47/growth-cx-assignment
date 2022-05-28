@@ -6,6 +6,10 @@
   @apply pt-[80px];
 }
 
+#layoutFooter > img {
+  @apply w-full;
+}
+
 #footerText {
   @apply bg-black pb-8 text-white h-full w-full;
 }
