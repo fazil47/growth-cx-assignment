@@ -32,8 +32,12 @@ export default function CustomerCard({
       <div className="customerCardFooter">
         <div className="customerCardServicesText">Services provided: </div>
         <div className="customerCardServicesProvided">
-          {services.map((service) => {
-            return <div className="customerCardService">{service}</div>;
+          {services.map((service, i) => {
+            return (
+              <div key={i} className="customerCardService">
+                {service}
+              </div>
+            );
           })}
         </div>
       </div>
