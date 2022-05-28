@@ -1,37 +1,41 @@
 .customerCard {
-  @apply border-4 border-black rounded-3xl flex flex-col justify-evenly p-8 my-12 h-[379px] lg:w-[800px] text-sm;
+  @apply snap-center border-4 border-black rounded-3xl flex flex-col justify-evenly p-4 sm:p-8 my-2 sm:my-12 sm:h-[379px] w-[400px] sm:w-full lg:w-[800px] text-sm;
 }
 
 .customerCardContent {
-  @apply flex flex-row justify-between align-middle items-center;
+  @apply flex flex-row justify-around sm:justify-between align-middle items-center h-[100px] sm:h-fit;
 }
 
 .customerCardDetails {
-  @apply flex flex-col text-left;
+  @apply flex flex-col text-left px-3 sm:px-0;
 }
 
 .customerLogo {
-  @apply w-[98px] h-fit;
+  @apply w-[54px] sm:w-[98px] h-fit;
 }
 
 .customerPersonal {
-  @apply py-4;
+  @apply py-2 sm:py-4;
 }
 
 .customerName {
-  @apply text-[16px] leading-[20px];
+  @apply text-[11px] leading-[15px] sm:text-[16px] sm:leading-[20px];
 }
 
 .customerDesignation {
-  @apply text-[14px] leading-[18px];
+  @apply text-[9px] leading-[12px] sm:text-[14px] sm:leading-[18px];
 }
 
-.customerDescription {
-  @apply text-[16px] leading-[24px] pb-4;
+.customerDescriptionNormal {
+  @apply hidden sm:block text-[16px] leading-[24px] pb-4 max-w-[300px];
+}
+
+.customerDescriptionSmall {
+  @apply sm:hidden text-[16px] leading-[24px] pb-4 w-[250px];
 }
 
 .customerImage {
-  @apply max-w-full h-fit rounded-xl m-5;
+  @apply max-w-[57px] sm:max-w-full h-fit rounded-xl sm:m-5;
 }
 
 .customerCardFooter {
@@ -39,7 +43,7 @@
 }
 
 .customerCardServicesProvided {
-  @apply flex flex-row;
+  @apply flex flex-row flex-wrap;
 }
 
 .customerCardServicesText {
@@ -47,5 +51,5 @@
 }
 
 .customerCardService {
-  @apply bg-[#ededed] p-2 mr-2 rounded-md text-center;
+  @apply bg-[#ededed] p-1 mr-1 sm:p-2 sm:mr-2 rounded-md text-center text-xs sm:text-base mt-1 sm:mt-0;
 }

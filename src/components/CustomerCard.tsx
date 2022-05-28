@@ -24,10 +24,11 @@ export default function CustomerCard({
             <h3 className="customerName">{name}</h3>
             <h3 className="customerDesignation">{designation}</h3>
           </div>
-          <p className="customerDescription">{description}</p>
+          <p className="customerDescriptionNormal">{description}</p>
         </div>
         <img src={image} alt={name} className="customerImage" />
       </div>
+      <p className="customerDescriptionSmall">{description}</p>
       <div className="customerCardFooter">
         <div className="customerCardServicesText">Services provided: </div>
         <div className="customerCardServicesProvided">

@@ -24,11 +24,15 @@
 }
 
 .customerSection {
-  @apply my-16 flex flex-col;
+  @apply my-16 flex flex-row overflow-x-auto gap-4 sm:gap-0 sm:flex-col snap-x sm:snap-none;
 }
 
 .customerCard:nth-child(odd) {
   @apply lg:ml-10;
+}
+
+.customerCard:nth-child(odd) > .customerCardContent {
+  @apply flex-row-reverse sm:flex-row;
 }
 
 .customerCard:nth-child(even) {
