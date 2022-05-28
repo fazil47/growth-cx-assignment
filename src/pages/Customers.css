@@ -1,6 +1,6 @@
 .mainSectionBackground {
   background-image: url("../imgs/mainSectionImage.png");
-  @apply h-[522px] w-full flex justify-center bg-no-repeat bg-contain bg-bottom;
+  @apply h-[522px] w-full flex justify-center bg-no-repeat bg-contain bg-center xl:bg-bottom;
 }
 
 .mainSection {
@@ -8,12 +8,17 @@
 }
 
 .aboutUs {
-  @apply max-w-[981px] h-[240px] mt-24 flex flex-col justify-evenly;
+  @apply max-w-[981px] h-[240px] xl:mt-24 flex flex-col justify-evenly;
 }
 
 .aboutUs h1 {
   @apply text-3xl xl:text-5xl;
 }
 
+.aboutUs h3 {
+  @apply text-lg xl:text-xl;
+}
+
 .byLine {
+  @apply text-xl xl:text-2xl;
 }
