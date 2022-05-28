@@ -1,0 +1,94 @@
+#menubar {
+  @apply fixed font-bold top-0 left-0 bg-white z-20 flex flex-col mb-3 p-4 xl:p-0 xl:pt-3 w-[100%] h-[35px] xl:h-[70px] xl:flex-row justify-between align-middle items-center;
+}
+
+.expandedMenu {
+  @apply fixed xl:static;
+}
+
+.collapsedMenu {
+  @apply static;
+}
+
+#menuMainContainer {
+  @apply flex flex-row w-full xl:w-fit h-[35px] xl:ml-[48px] xl:mr-0 justify-between z-30 align-middle items-center;
+}
+
+#menuLogo {
+  @apply w-[145px] xl:w-[195px] align-middle items-center;
+}
+
+#menuButton {
+  @apply xl:hidden;
+}
+
+#menuLinkContainer {
+  @apply bg-white flex-grow fixed top-4 left-0 h-full w-full xl:max-w-[900px] xl:static xl:h-[35px] z-20;
+}
+
+#menuLinks {
+  @apply text-[17px] flex flex-col xl:flex-row justify-evenly h-full w-full xl:justify-evenly items-center xl:h-full align-middle;
+}
+
+.expandedMenu > #menuLinkContainer {
+  @apply visible;
+}
+
+.collapsedMenu > #menuLinkContainer {
+  @apply invisible xl:visible;
+}
+
+#openMenuIcon,
+#closeMenuIcon {
+  @apply h-5 w-5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .expandedMenu #menuLinks {
+    animation-name: revealLinks;
+    animation-duration: 0.5s;
+  }
+
+  #closeMenuIcon {
+    animation-name: revealButton;
+    animation-duration: 0.5s;
+  }
+
+  #openMenuIcon {
+    animation-name: revealButtonReversed;
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes revealLinks {
+  from {
+    transform: translateY(-10px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes revealButton {
+  from {
+    transform: rotate(0deg);
+    opacity: 0%;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 100%;
+  }
+}
+
+@keyframes revealButtonReversed {
+  from {
+    transform: rotate(360deg);
+    opacity: 0%;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.page {
+  @apply pb-10 px-4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page {
+    animation-name: revealPage;
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes revealPage {
+  from {
+    transform: translateY(-10px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.page .placeholder {
+  @apply text-center m-10;
+}

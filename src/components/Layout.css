@@ -1,0 +1,7 @@
+#layout {
+  @apply w-full h-full overflow-y-hidden px-2;
+}
+
+#layoutContent {
+  @apply pt-[80px];
+}

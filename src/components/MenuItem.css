@@ -1,0 +1,7 @@
+.selectedMenuItem {
+  @apply underline decoration-[#000000] underline-offset-8;
+}
+
+.menuItem {
+  @apply hover:underline decoration-[#000000] underline-offset-8;
+}
