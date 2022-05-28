@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
+Live at: [growth-cx-assignment-fazil.netlify.app](https://growth-cx-assignment-fazil.netlify.app/)
+
 https://user-images.githubusercontent.com/18116695/170831516-fe9e957e-d841-48c6-b4e0-d877caf22ce9.mp4
 
 ## Available Scripts
