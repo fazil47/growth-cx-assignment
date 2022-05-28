@@ -1,5 +1,5 @@
 .customerCard {
-  @apply border-4 border-black rounded-3xl flex flex-col justify-evenly p-8 my-12 h-[379px] max-w-3xl text-sm;
+  @apply border-4 border-black rounded-3xl flex flex-col justify-evenly p-8 my-12 h-[379px] lg:w-[800px] text-sm;
 }
 
 .customerCardContent {
@@ -7,7 +7,7 @@
 }
 
 .customerCardDetails {
-  @apply flex flex-col text-left max-w-[354px];
+  @apply flex flex-col text-left;
 }
 
 .customerLogo {
@@ -31,7 +31,7 @@
 }
 
 .customerImage {
-  @apply max-w-full h-fit rounded-xl;
+  @apply max-w-full h-fit rounded-xl m-5;
 }
 
 .customerCardFooter {

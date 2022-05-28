@@ -1,5 +1,5 @@
 #menubar {
-  @apply fixed font-bold top-0 left-0 bg-white z-20 flex flex-col mb-3 p-4 xl:p-0 xl:pt-3 w-[100%] h-[35px] xl:h-[70px] xl:flex-row justify-between align-middle items-center;
+  @apply fixed font-bold top-0 left-0 bg-white z-20 flex flex-col mb-3 p-4 xl:p-0 xl:pt-3 w-[100%] h-[70px] xl:flex-row justify-between align-middle items-center;
 }
 
 .expandedMenu {

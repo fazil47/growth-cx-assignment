@@ -24,5 +24,17 @@
 }
 
 .customerSection {
-  @apply my-16;
+  @apply my-16 flex flex-col;
+}
+
+.customerCard:nth-child(odd) {
+  @apply lg:ml-10;
+}
+
+.customerCard:nth-child(even) {
+  @apply lg:ml-auto lg:mr-10;
+}
+
+.customerCard:nth-child(even) > .customerCardContent {
+  @apply flex-row-reverse;
 }
