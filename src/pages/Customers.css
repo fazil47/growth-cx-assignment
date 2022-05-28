@@ -22,3 +22,7 @@
 .byLine {
   @apply text-xl xl:text-2xl;
 }
+
+.customerSection {
+  @apply my-16;
+}

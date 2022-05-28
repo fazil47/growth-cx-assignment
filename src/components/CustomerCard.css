@@ -1,0 +1,51 @@
+.customerCard {
+  @apply border-4 border-black rounded-3xl flex flex-col justify-evenly p-8 my-12 h-[379px] max-w-3xl text-sm;
+}
+
+.customerCardContent {
+  @apply flex flex-row justify-between align-middle items-center;
+}
+
+.customerCardDetails {
+  @apply flex flex-col text-left max-w-[354px];
+}
+
+.customerLogo {
+  @apply w-[98px] h-fit;
+}
+
+.customerPersonal {
+  @apply py-4;
+}
+
+.customerName {
+  @apply text-[16px] leading-[20px];
+}
+
+.customerDesignation {
+  @apply text-[14px] leading-[18px];
+}
+
+.customerDescription {
+  @apply text-[16px] leading-[24px] pb-4;
+}
+
+.customerImage {
+  @apply max-w-full h-fit rounded-xl;
+}
+
+.customerCardFooter {
+  @apply text-left;
+}
+
+.customerCardServicesProvided {
+  @apply flex flex-row;
+}
+
+.customerCardServicesText {
+  @apply font-bold;
+}
+
+.customerCardService {
+  @apply bg-[#ededed] p-2 mr-2 rounded-md text-center;
+}
