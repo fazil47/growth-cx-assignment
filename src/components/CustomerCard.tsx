@@ -41,6 +41,14 @@ export default function CustomerCard({
           })}
         </div>
       </div>
+      <div className="customerCardExtra">
+        <div className="customerCardExtraTriangleContainer">
+          <div className="customerCardExtraTriangle" />
+        </div>
+        <div className="customerCardExtraQuotesContainer">
+          <div className="customerCardExtraQuotes" />
+        </div>
+      </div>
     </div>
   );
 }

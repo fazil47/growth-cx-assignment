@@ -1,9 +1,9 @@
 .customerCard {
-  @apply snap-center border-4 border-black rounded-3xl flex flex-col justify-evenly p-4 sm:p-8 my-2 sm:my-12 sm:h-[379px] max-w-[350px] sm:max-w-full sm:w-full lg:w-[800px] text-sm;
+  @apply snap-center border-4 border-black rounded-3xl flex flex-col justify-evenly p-4 sm:p-8 my-2 sm:my-[100px] sm:h-[384px] max-w-[350px] sm:max-w-full sm:w-full lg:w-[800px] text-sm;
 }
 
 .customerCardContent {
-  @apply flex flex-row-reverse sm:flex-row justify-around sm:justify-between align-middle items-center h-[100px] sm:h-fit;
+  @apply z-10 flex flex-row-reverse sm:flex-row justify-around sm:justify-between align-middle items-center h-[100px] sm:h-fit;
 }
 
 .customerCardDetails {
@@ -39,7 +39,7 @@
 }
 
 .customerCardFooter {
-  @apply text-left;
+  @apply z-10 text-left;
 }
 
 .customerCardServicesProvided {
@@ -51,5 +51,34 @@
 }
 
 .customerCardService {
-  @apply bg-[#ededed] p-1 mr-1 sm:p-2 sm:mr-2 rounded-md text-center text-xs sm:text-base mt-1 sm:mt-0;
+  @apply bg-[#ededed] p-1 mr-1 sm:p-2 sm:mr-2 rounded-md text-center text-xs sm:text-sm mt-1 sm:mt-0;
+}
+
+.customerCardExtra {
+  @apply absolute mx-auto hidden lg:flex lg:w-[800px] justify-between;
+}
+
+.customerCardExtraTriangleContainer {
+  @apply block;
+}
+
+.customerCardExtraQuotesContainer {
+  @apply block;
+}
+
+.customerCardExtraTriangle {
+  @apply relative border-black border-b-4 border-r-4 bg-white rotate-45 h-[70px] w-[70px] my-auto lg:translate-y-[190px] lg:translate-x-[150px];
+}
+
+.customerCardExtraQuotes {
+  background-image: url("../imgs/quotes.svg");
+  @apply relative bg-white h-[65px] w-[81px] bg-no-repeat bg-center rotate-180 lg:translate-x-[-160px] lg:translate-y-[200px];
+}
+
+.customerCard:nth-child(even) .customerCardExtraTriangle {
+  @apply lg:translate-y-[190px] lg:translate-x-[580px];
+}
+
+.customerCard:nth-child(even) .customerCardExtraQuotes {
+  @apply rotate-0 lg:translate-x-[-140px] lg:translate-y-[-190px] scale-x-[-1];
 }
