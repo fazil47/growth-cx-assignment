@@ -40,7 +40,7 @@
 
 #openMenuIcon,
 #closeMenuIcon {
-  @apply h-5 w-5;
+  @apply h-[23px] w-[23px];
 }
 
 #menuLinks > a:nth-child(2):after {

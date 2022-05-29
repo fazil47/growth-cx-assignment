@@ -46,7 +46,7 @@ export default function Menubar() {
           <MenuItem to="placeholder" name="Growth" />
           <MenuItem to="placeholder" name="Eye-openers" />
           <MenuItem to="" name="Customers" />
-          <button className="blackButton">Talk to out CEO</button>
+          <button className="blackButton">Talk to our CEO</button>
         </div>
       </div>
     </div>
