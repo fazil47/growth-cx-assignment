@@ -1,9 +1,9 @@
 .customerCard {
-  @apply snap-center border-4 border-black rounded-3xl flex flex-col justify-evenly p-4 sm:p-8 my-2 sm:my-12 sm:h-[379px] w-[400px] sm:w-full lg:w-[800px] text-sm;
+  @apply snap-center border-4 border-black rounded-3xl flex flex-col justify-evenly p-4 sm:p-8 my-2 sm:my-12 sm:h-[379px] max-w-[350px] sm:max-w-full sm:w-full lg:w-[800px] text-sm;
 }
 
 .customerCardContent {
-  @apply flex flex-row justify-around sm:justify-between align-middle items-center h-[100px] sm:h-fit;
+  @apply flex flex-row-reverse sm:flex-row justify-around sm:justify-between align-middle items-center h-[100px] sm:h-fit;
 }
 
 .customerCardDetails {
@@ -31,7 +31,7 @@
 }
 
 .customerDescriptionSmall {
-  @apply sm:hidden text-[16px] leading-[24px] pb-4 w-[250px];
+  @apply sm:hidden text-[16px] leading-[24px] pb-4;
 }
 
 .customerImage {

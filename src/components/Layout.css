@@ -1,5 +1,5 @@
 #layout {
-  @apply w-full h-full overflow-y-hidden;
+  @apply w-full h-full overflow-y-hidden overflow-x-hidden;
 }
 
 #layoutContent {

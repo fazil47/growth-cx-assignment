@@ -1,0 +1,27 @@
+.cardCarousel {
+  @apply sm:hidden;
+}
+
+.cardCarouselCardContainer {
+  @apply p-2;
+}
+
+.cardCarouselCardContainer > .customerCard {
+  @apply mx-auto;
+}
+
+.cardsNonMobile {
+  @apply hidden sm:block;
+}
+
+.cardsNonMobile > .customerCard:nth-child(odd) {
+  @apply lg:ml-10;
+}
+
+.cardsNonMobile > .customerCard:nth-child(even) {
+  @apply lg:ml-auto lg:mr-10;
+}
+
+.cardsNonMobile > .customerCard:nth-child(even) > .customerCardContent {
+  @apply flex-row-reverse;
+}
